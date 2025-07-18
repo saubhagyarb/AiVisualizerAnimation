@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Reply</string>
+    <string name="navigation_drawer">Navigation Drawer</string>
+    <string name="navigation_rail">Navigation Rail</string>
+    <string name="navigation_bottom">Navigation Bottom</string>
+    <string name="navigation_back">Back</string>
+    <string name="details_screen">Details Screen</string>
+    <string name="tab_inbox">Inbox</string>
+    <string name="tab_sent">Sent</string>
+    <string name="tab_drafts">Drafts</string>
+    <string name="tab_spam">Spam</string>
+    <string name="logo">Logo</string>
+
+    <string name="profile">Profile</string>
+    <string name="reply">Reply</string>
+    <string name="reply_all">Reply All</string>
+    <string name="continue_composing">Continue Composing</string>
+    <string name="delete">Delete</string>
+    <string name="move_to_inbox">Move to Inbox</string>
+
+    <string name="account_4_first_name">Trisha</string>
+    <string name="account_4_last_name">Mehra</string>
+    <string name="account_4_email">trisha.mehra@replymail.in</string>
+
+    <string name="account_5_first_name">Alok</string>
+    <string name="account_5_last_name">Rathore</string>
+    <string name="account_5_email">alok.rathore@replymail.in</string>
+
+    <string name="account_6_first_name">Aisha</string>
+    <string name="account_6_last_name">Khan</string>
+    <string name="account_6_email">aisha.khan@replymail.in</string>
+
+    <string name="account_7_first_name">Raj</string>
+    <string name="account_7_last_name">Verma</string>
+    <string name="account_7_email">raj.verma@replymail.in</string>
+
+    <string name="account_8_first_name">Kiran</string>
+    <string name="account_8_last_name">Nair</string>
+    <string name="account_8_email">kiran.nair@replymail.in</string>
+
+    <string name="account_9_first_name">FlipKart</string>
+    <string name="account_9_last_name">Support</string>
+    <string name="account_9_email">support@flipkart.in</string>
+
+    <string name="account_10_first_name">Sandhya</string>
+    <string name="account_10_last_name">Rao</string>
+    <string name="account_10_email">sandhya.rao@replymail.in</string>
+
+    <string name="account_11_first_name">Tejas</string>
+    <string name="account_11_last_name">Iyer</string>
+    <string name="account_11_email">tejas.iyer@replymail.in</string>
+
+    <string name="account_12_first_name">Saanvi</string>
+    <string name="account_12_last_name">Joshi</string>
+    <string name="account_12_email">saanvi.joshi@replymail.in</string>
+
+    <string name="account_13_first_name">Farhan</string>
+    <string name="account_13_last_name">Shaikh</string>
+    <string name="account_13_email">farhan.shaikh@replymail.in</string>
+
+    <string name="email_0_subject">Your Order Has Been Dispatched!</string>
+    <string name="email_0_body">
+        Your Neem-Tulsi Face Pack has been dispatched.\n\nExpected delivery between Wednesday and Saturday. If not received by then, please get in touch with our customer support.\n\nThank you for choosing AyurKart – Pure, Herbal, Trusted.
+    </string>
+    <string name="email_0_time">20 mins ago</string>
+
+    <string name="email_1_subject">Chai Catch-up?</string>
+    <string name="email_1_body">
+        I’ll be around Powai this Saturday and thought we could catch up over some chai and samosas.\n\nIt’s been ages! Also, remind me to tell you about Neha’s Kerala trip. She had a blast at Varkala Beach!\n\nSee you soon,\nAisha
+    </string>
+    <string name="email_1_time">40 mins ago</string>
+
+    <string name="email_2_subject">Namaste from Jaipur</string>
+    <string name="email_2_body">
+        Sending you some stunning pics from the Pink City!
+    </string>
+    <string name="email_2_time">1 hour ago</string>
+
+    <string name="email_3_subject">School Reunion in Delhi?</string>
+    <string name="email_3_body">
+        Hey buddies,\n\nI bumped into Rahul Bhardwaj at Select Citywalk last Sunday. He’s helping organize a school reunion this October.\n\nWe’re doing a small planning meet at his home in Lajpat Nagar next Saturday. Join us if you can!\n\nCheers,\nRaj
+    </string>
+    <string name="email_3_time">2 hours ago</string>
+
+    <string name="email_4_subject">Goa Trip Plans</string>
+    <string name="email_4_body">
+        Let’s finalize the Goa trip details.\n\nI’ve found a few beach shacks near Arambol. Also thinking we could do parasailing and maybe a spice plantation tour. Let’s connect later today and chalk out the plan.\n\n—Tejas
+    </string>
+    <string name="email_4_time">2 hours ago</string>
+
+    <string name="email_5_subject">Updated Train Tickets</string>
+    <string name="email_5_body" />
+    <string name="email_5_time">2 hours ago</string>
+
+    <string name="email_6_subject">Maa’s Recipe for Today</string>
+    <string name="email_6_body">
+        Kesar Rasmalai: It’s easy to make and super delicious. Let’s try it tonight!
+    </string>
+    <string name="email_6_time">2 hours ago</string>
+
+    <string name="email_7_subject">Delivered!</string>
+    <string name="email_7_body">
+        Your Kurti and Kolhapuri chappals have been delivered. Let us know how you liked them!
+    </string>
+    <string name="email_7_time">2 hours ago</string>
+
+    <string name="email_8_subject">Your App Update is Live on Play Store!</string>
+    <string name="email_8_body">
+        Your version 1.2.3 is now live and available for beta testers.\n\nTo share manually, get the testing link from Google Play Console. Great job, dev!
+    </string>
+    <string name="email_8_time">3 hours ago</string>
+
+    <string name="email_9_subject">(No subject)</string>
+    <string name="email_9_body">
+        Hey,\n\nWanted to check if you had a chance to look at that Diwali campaign brief.
+    </string>
+    <string name="email_9_time">3 hours ago</string>
+
+    <string name="email_10_subject">Explore Trails Near You</string>
+    <string name="email_10_body">
+        Discover nature with TrekMate – from Himachal’s pine forests to Sahyadri’s waterfalls, find trails that fit your vibe!
+    </string>
+    <string name="email_10_time">3 hours ago</string>
+
+    <string name="email_11_subject">You’ve Won a Lucky Draw!</string>
+    <string name="email_11_body">
+        Congratulations! You’ve won ₹5,000 worth shopping voucher from DesiBazaar. Claim now before it expires!
+    </string>
+    <string name="email_11_time">3 hours ago</string>
+
+</resources>
