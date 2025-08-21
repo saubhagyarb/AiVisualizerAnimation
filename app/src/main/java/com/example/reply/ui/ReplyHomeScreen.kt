@@ -218,7 +218,7 @@ private fun ReplyNavigationRail(
 }
 
 @Composable
-private fun ReplyBottomNavigationBar(
+fun ReplyBottomNavigationBar(
     currentTab: MailboxType,
     onTabPressed: ((MailboxType) -> Unit),
     navigationItemContentList: List<NavigationItemContent>,
@@ -295,7 +295,7 @@ private fun NavigationDrawerHeader(
     }
 }
 
-private data class NavigationItemContent(
+data class NavigationItemContent(
     val mailboxType: MailboxType,
     val icon: ImageVector,
     val text: String
