@@ -66,6 +66,8 @@ dependencies {
     implementation("androidx.lifecycle:lifecycle-viewmodel-compose:${rootProject.extra["lifecycle_version"]}")
     implementation("androidx.wear.compose:compose-material:1.4.1")
     implementation("androidx.constraintlayout:constraintlayout:2.2.1")
+    implementation("androidx.media3:media3-exoplayer:1.8.0")
+    implementation("androidx.media3:media3-ui:1.8.0")
 
     androidTestImplementation(platform("androidx.compose:compose-bom:2025.08.00"))
     androidTestImplementation("androidx.compose.ui:ui-test-junit4")

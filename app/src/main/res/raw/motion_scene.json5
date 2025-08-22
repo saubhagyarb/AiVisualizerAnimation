@@ -2,8 +2,8 @@
   ConstraintSets: {
     start: {
       mic: {
-        width: 400,
-        height: 400,
+        width: 300,
+        height: 300,
         top: ['parent', 'top'],
         bottom: ['parent', 'bottom', 200],
         start: ['parent', 'start'],
@@ -34,10 +34,9 @@
         end: ['parent', 'end']
       },
       navigationBar: {
-        bottom: ['parent', 'bottom'],
+        bottom: ['parent', 'bottom', -200],   // 👈 hidden off-screen at start
         start: ['parent', 'start'],
-        end: ['parent', 'end'],
-        alpha: 0
+        end: ['parent', 'end']
       }
     },
 
@@ -75,25 +74,16 @@
       navigationBar: {
         bottom: ['parent', 'bottom'],
         start: ['parent', 'start'],
-        end: ['parent', 'end'],
-        alpha: 1
+        end: ['parent', 'end']
       }
     }
   },
+
   Transitions: {
     default: {
       from: 'start',
       to: 'end',
-      pathMotionArc: 'none',
-      KeyFrames: {
-        KeyAttributes: [
-          {
-            target: ['aiScreen'],
-            frames: [0, 50, 100],
-            alpha: [1, 1, 1]
-          }
-        ]
-      }
+      pathMotionArc: 'none'
     }
   }
 }

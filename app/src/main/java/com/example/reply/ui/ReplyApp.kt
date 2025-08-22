@@ -1,6 +1,5 @@
 package com.example.reply.ui
 
-import android.util.Log
 import androidx.compose.foundation.gestures.Orientation
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxSize
@@ -17,6 +16,10 @@ import androidx.compose.runtime.getValue
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.drawBehind
+import androidx.compose.ui.geometry.Offset
+import androidx.compose.ui.graphics.Brush
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.layoutId
 import androidx.compose.ui.platform.LocalConfiguration
 import androidx.compose.ui.platform.LocalContext
@@ -39,6 +42,7 @@ import com.airbnb.lottie.compose.rememberLottieComposition
 import com.example.reply.R
 import com.example.reply.data.Email
 import com.example.reply.data.MailboxType
+import com.example.reply.ui.components.AiScreen
 import com.example.reply.ui.utils.ReplyContentType
 import com.example.reply.ui.utils.ReplyNavigationType
 import kotlinx.coroutines.launch
@@ -149,12 +153,7 @@ fun ReplyApp(
                 modifier = modifier.layoutId("loginScreen")
             )
 
-
-
-
-
-
-            OhhProAiMic(
+            AiScreen(
                 modifier = Modifier.layoutId("aiScreen")
                     .swipeable(
                         state = swipeableState,
@@ -171,30 +170,43 @@ fun ReplyApp(
                 },
                 onSwipeDown = {
                     coroutineScope.launch {
-                        swipeableState.animateTo(-1)
+                        swipeableState.animateTo(0)
                     }
                 }
             )
 
-
-
-
             LottieAnimation(
                 modifier = Modifier
-                    .layoutId("mic"),
+                    .layoutId("mic")
+                    .drawBehind {
+                        val radius = size.minDimension / 2f
+                        val gradient = Brush.radialGradient(
+                            colors = listOf(
+                                Color(0xffCB0FFF),
+
+                                Color.Transparent
+                            ),
+                            center = Offset(size.width / 2, size.height / 2),
+                            radius = radius
+                        )
+                        drawCircle(brush = gradient, radius = radius)
+                    },
                 composition = composition,
                 progress = { progress }
             )
-            ReplyBottomNavigationBar(
-                currentTab = replyUiState.currentMailbox,
-                onTabPressed = { mailboxType: MailboxType ->
-                    viewModel.updateCurrentMailbox(mailboxType = mailboxType)
-                    viewModel.resetHomeScreenStates()
-                },
-                navigationItemContentList = navigationItemContentList,
-                modifier = Modifier
-                    .fillMaxWidth().layoutId("navigationBar")
-            )
+
+            if (windowSize == WindowWidthSizeClass.Compact) {
+                ReplyBottomNavigationBar(
+                    currentTab = replyUiState.currentMailbox,
+                    onTabPressed = { mailboxType: MailboxType ->
+                        viewModel.updateCurrentMailbox(mailboxType = mailboxType)
+                        viewModel.resetHomeScreenStates()
+                    },
+                    navigationItemContentList = navigationItemContentList,
+                    modifier = Modifier
+                        .fillMaxWidth().layoutId("navigationBar")
+                )
+            }
         }
     }
 }
