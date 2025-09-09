@@ -1,6 +1,21 @@
-Reply App - Solution Code
+AI viusalizer animation
 =================================
 Solution code for the Android Basics with Compose: Reply app.
+<table border="1" style="width: 100%; border-collapse: collapse;">
+  <tr>
+    <td style="text-align: center; height: 150px;">
+      <img src="https://github.com/user-attachments/assets/61907b64-6755-4b4d-9a45-a696896da585" 
+           alt="Screenshot 1" 
+           style="height: 100%; max-height: 150px;"/>
+    </td>
+    <td style="text-align: center; height: 150px;">
+      <img src="https://github.com/user-attachments/assets/c3be44c0-058b-4c91-b4bf-6abf4bd392a5" 
+           alt="Screenshot 2" 
+           style="height: 100%; max-height: 150px;"/>
+    </td>
+  </tr>
+</table>
+
 
 Introduction
 ------------
